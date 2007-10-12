@@ -332,6 +332,9 @@ function (file)
         53, 72)))
     h5 <- readLines(file, 1, ok = FALSE)
     rhs.mode <- substr(h5[1], 1, 1)
+    rhs <- NULL
+    guess <- NULL
+    xexact <- NULL 
     if (!is.na(rhsln) && rhsln > 0) {
         g.mode <- substr(h5[1], 2, 2)
         e.mode <- substr(h5[1], 3, 3)
