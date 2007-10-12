@@ -1017,8 +1017,8 @@ function (formula,  data, weights, na.action, method = "csr",
     if (method == "model.frame") 
         return(m)
     Terms <- attr(m, "terms")
-    weights <- model.extract(m, weights)
-    Y <- model.extract(m, response)
+    weights <- model.extract(m, "weights")
+    Y <- model.extract(m, "response")
     X <- as.matrix.csr(model.matrix(Terms, m, contrasts))
     fit <- {
         if (length(weights)) 

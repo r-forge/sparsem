@@ -1,5 +1,5 @@
 Package:  SparseM
-Version:  0.73
+Version:  0.74
 Author:   Roger Koenker <rkoenker@uiuc.edu> and Pin Ng <Pin.Ng@NAU.EDU>
 Maintainer:  Roger Koenker <rkoenker@uiuc.edu>
 Depends: R (>= 1.9), methods, stats, utils
